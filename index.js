@@ -1,6 +1,11 @@
-let greenCharacter = document.createElement('img')
-greenCharacter.src = 'assets/green-character.gif'
-greenCharacter.style.position = 'fixed'
-greenCharacter.style.left = '100px'
-greenCharacter.style.bottom = '100px'
-document.body.append(greenCharacter)
+function newImage(src, left, right) {
+    let img = document.createElement('img');
+    img.src = src;
+    img.style.position = 'fixed';
+    img.style.left = left;
+    img.style.bottom = right;
+    document.body.append(img);
+}
+
+newImage('/assets/green-character.gif', '100px', '100px');
+newImage('/assets/pine-tree.png', '450px', '200px');
